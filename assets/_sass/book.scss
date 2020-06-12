@@ -7,7 +7,7 @@
   margin-bottom: 3em;
 }
 
-.book + .book {
+.book+.book {
   border-top: 3px double $color-border;
   padding-top: $margin-m;
 }
@@ -33,6 +33,17 @@
 .book__title-small {
   display: block;
   margin-bottom: 1em;
+}
+
+.separator {
+  // display: block;
+  margin-bottom: 1.1em;
+  margin-top: 1.2em;
+  text-align: left;
+  color: $color-secondary;
+  font: 2em/1.2 $font-body;
+  @include all-caps();
+
 }
 
 .book__image {
@@ -72,6 +83,16 @@ a.book__image {
   }
 }
 
+.review {
+  padding-top: 1.25em;
+  max-width: 40em;
+  border-top: 1px solid $color-border;
+
+  p {
+    margin-bottom: 1em;
+  }
+}
+
 .highlights {
   padding-top: 1.25em;
   border-top: 1px solid $color-border;
@@ -108,7 +129,7 @@ a.book__image {
   font: 1em/20px $font-body;
   opacity: .5;
   transition: opacity 200ms;
-  
+
   svg {
     position: absolute;
     left: 0;
@@ -149,7 +170,7 @@ a.book__image {
   }
 
   &:active {
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255, 255, 255, .5);
   }
 }
 
@@ -164,7 +185,7 @@ a.book__image {
     margin-left: auto;
   }
 
-  .book + .book {
+  .book+.book {
     padding-top: 0;
     border-top: 0;
   }
@@ -182,12 +203,20 @@ a.book__image {
     width: 200px;
   }
 
-  .highlights {
-    padding-top: 0;
-    border-top: 0;
+  .book__notes {
     width: auto;
     overflow: hidden;
     text-align: left;
+  }
+
+  .review {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .highlights {
+    padding-top: 0;
+    border-top: 0;
   }
 }
 

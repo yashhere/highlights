@@ -24,7 +24,7 @@ Where "dash-separated" is also the file name for the `_data` file, JPG, and SVG.
 ### Each highlight
 
 ```
-- text: 
-  page: 
-  attribution: 
+- text:
+  page:
+  attribution:
 ```

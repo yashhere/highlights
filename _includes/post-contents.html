@@ -1,25 +1,42 @@
 <article class="book">
-  {% assign current_book = post.book %}
   {% assign current_book_url = post.url %}
+  {% assign current_book = book %}
+
+  {% unless individualPost %}
+    {% assign title = post.title %}
+    {% assign author = post.author | join: ", " %}
+    {% assign quotes = post.quotes %}
+    {% assign current_book = post.book %}
+  {% endunless %}
+
   <div class="book__info">
-    {% if individualPost %}
-      <h1 class="book__title"><span class="book__title-small">Highlights from</span> {{ post.title }} by {{ post.author }}</h1>
+    {% unless individualPost %}
+      <h2 class="book__title">{{ title }}<br> by <br>{{ author }}</h2>
     {% else %}
-      <h2 class="book__title">{{ post.title }} by {{ post.author }}</h2>
-    {% endif %}
+      <h1 class="book__title"><span class="book__title-small">Highlights from</span> {{ title }}<br> by <br>{{ author | join: ", " }}</h1>
+    {% endunless %}
     <div class="book__image">
-      <img src="/assets/images/covers/{{ current_book }}.jpg" alt="Cover of {{ post.title }}" />
+      <img src="/assets/images/covers/{{ current_book }}.jpg" alt="Cover of {{ title }}" />
     </div>
   </div>
 
+ <div class="book__notes">
+  {% if review %}
+  <div class="review">
+    <div class="separator">Review</div>
+    {{ content }}
+  </div>
+  {% endif %}
+
+  {% if kindle %}
+  <div class="separator">Highlights</div>
   <ul class="highlights">
-    {% for highlight in site.data[current_book] %}
-      <li class="highlight" id="{{ highlight.text | downcase | slice: 0, 15 | url_encode }}">
-        <p class="highlight__text">{{ highlight.text }}</p>
-        {% if highlight.attribution %}<cite class="highlight__attribution"> — {{ highlight.attribution}}</cite>{% endif %}
+    {% for highlight in quotes[title] %}
+      <li class="highlight" id="{{ highlight.content | downcase | slice: 0, 15 | url_encode }}">
+        <p class="highlight__text">{{ highlight.content }}</p>
         <div class="highlight__meta">
-          <span class="highlight__location">{{ highlight.page }}</span>
-          <a href="{{ current_book_url }}#{{ highlight.text | downcase | slice: 0, 15 | url_encode }}" class="highlight__link">
+          <span class="highlight__location">{{ highlight.loc }}</span>
+          <a href="{{ current_book_url }}#{{ highlight.content | downcase | slice: 0, 15 | url_encode }}" class="highlight__link">
             <svg aria-hidden="true" viewBox="0 0 30 20" width="30" height="20">
               <use xlink:href="#link"></use>
             </svg>
@@ -30,4 +47,6 @@
       </li>
     {% endfor %}
   </ul>
+  {% endif %}
+  </div>
 </article>

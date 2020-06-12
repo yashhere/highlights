@@ -1,0 +1,17 @@
+{% include head.html %}
+{% include header.html %}
+
+<h1 class="sr-only">Explore all books</h1>
+
+<ul class="covers">
+  {% for post in collections.posts %}
+    <li class="cover">
+      {% assign current_book = post.data.book %}
+      <a href="{{ post.url}}" class="book__image" data-bgSrc="/assets/images/covers/{{ current_book }}.jpg" title="{{ post.data.title }}">
+        <img src="/assets/images/covers/{{ current_book }}.jpg" />
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+{% include footer.html %}

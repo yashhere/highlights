@@ -1,0 +1,35 @@
+---
+pagination:
+  data: collections.posts
+  size: 6
+  alias: posts
+---
+
+{% include head.html %}
+{% include header.html %}
+
+{% for p in collections.posts %}
+  {% assign post = p.data %}
+  {% assign individualPost = false %}
+  {% include post-contents.html %}
+{% endfor %}
+
+<!-- PAGINATION -->
+<nav class="pagination" aria-label="pagination">
+  {% if pagination.href.next %}
+    <a class="pagination__older" href="{{ pagination.nextPageHref }}" title="Older posts">
+      <svg viewBox="0 0 30 30" width="30" height="30">
+        <use xlink:href="#older"></use>
+      </svg>
+    </a>
+  {% endif %}
+  {% if pagination.href.previous %}
+    <a class="pagination__newer" href="{{ pagination.previousPageHref }}" title="Newer posts">
+      <svg viewBox="0 0 30 30" width="30" height="30">
+        <use xlink:href="#newer"></use>
+      </svg>
+    </a>
+  {% endif %}
+</nav>
+
+{% include footer.html %}
