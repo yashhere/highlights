@@ -25,10 +25,11 @@ Internet. As it was only 80 minutes long, there was no in-depth analysis or piec
 surface and keeps the big talk for his other books. He mentions this repeatedly. However, it was mostly straight-forward,
 practical and motivational read.
 
-Some of my takeaways from this book (not exactly same, some written from my memory and some from [goodreads](https://www.goodreads.com/book/show/31430654-the-millionaire-booklet)) --
+# Notes
+Some of my takeaways from this book (not exactly same, some written from my memory and some from [goodreads](https://www.goodreads.com/book/show/31430654-the-millionaire-booklet)) -
 
-1. If you are going to be unhappy, be unhappy after getting rich.
-2. Getting rich is a game of offense, not defense.
+- If you are going to be unhappy, be unhappy after getting rich.
+- Getting rich is a game of offense, not defense.
 3. I believe millionaire is today's new middle class.
 4. Do the math to create possibility, then create a strategy.
 5. The best ideas are always simple.

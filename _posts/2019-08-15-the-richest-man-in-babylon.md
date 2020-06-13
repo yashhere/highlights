@@ -50,6 +50,7 @@ Following are my detailed notes for each of these topics -
     - Safe loans are those where possessions are more than what is desired.
 
 
+# Notes
 *Some of the quotes from the book which I liked -*
 
 - Advice is one thing that is freely given away, but watch that you only take what is worth having.
