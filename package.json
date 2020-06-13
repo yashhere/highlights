@@ -1,29 +1,28 @@
 {
   "name": "highlights",
   "version": "1.0.0",
-  "description": "![Screenshot of the website](assets/images/screenshot.png?raw=true)",
-  "main": "index.js",
+  "description": "Some snippets I thought worth highlighting and saving for later",
+  "author": "Yash Agarwal",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "eleventy",
+    "watch": "eleventy --serve --port=8181",
+    "start": "npm run watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/melanierichards/highlights.git"
+    "url": "git+https://github.com/yashhere/highlights.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/melanierichards/highlights/issues"
+    "url": "https://github.com/yashhere/highlights/issues"
   },
-  "homepage": "https://github.com/melanierichards/highlights#readme",
+  "homepage": "https://github.com/yashhere/highlights#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0"
   },
   "dependencies": {
     "fs-extra": "^9.0.1",
-    "kindle-clippings": "^1.0.0",
-    "markdown-it": "^11.0.0",
     "node-sass-promise": "^1.0.0",
     "sass": "^1.26.8"
   }
