@@ -1,4 +1,6 @@
 const fs = require('fs-extra');
+const moment = require('moment-timezone');
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 const sass = require('./config/sass-process');
 const clippings = require('./config/clippings-parsing');
@@ -7,6 +9,10 @@ module.exports = function (eleventyConfig) {
     // a debug utility
     eleventyConfig.addFilter("dump", obj => {
         return util.inspect(obj);
+    });
+
+    eleventyConfig.addFilter("dateformat", function (dateIn) {
+        return moment(dateIn).tz('GMT').format('DD-MM-YYYY');
     });
 
     // compress and combine js files
@@ -20,8 +26,27 @@ module.exports = function (eleventyConfig) {
     //     );
     // }
 
-    sass('./assets/_sass/style.scss', './assets/css/style.css');
-    clippings.parseClippings('My Clippings.txt', '_data/quotes.json');
+    sass('./assets/_sass/style.scss', '_site/assets/css/style.css');
+    clippings.parseClippings('My Clippings.txt', '_data/kindle_highlights.json');
+
+    // Plugins
+    eleventyConfig.addPlugin(pluginRss);
+
+    /* Markdown Plugins */
+    let markdownIt = require("markdown-it");
+    let markdownItAnchor = require("markdown-it-anchor");
+    let options = {
+        html: true,
+        breaks: true,
+        linkify: true
+    };
+    let opts = {
+        permalink: false
+    };
+
+    eleventyConfig.setLibrary("md", markdownIt(options)
+        .use(markdownItAnchor, opts)
+    );
 
     // Aliases are in relation to the _includes folder
     eleventyConfig.addLayoutAlias('error', 'layouts/error.html');
@@ -31,7 +56,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addLayoutAlias('home', 'layouts/home.html');
 
     eleventyConfig.addCollection('posts', function (collection) {
-        return collection.getFilteredByGlob('_posts/*.md').sort(function (a, b) {
+        return collection.getFilteredByGlob('posts/*.md').sort(function (a, b) {
             return b.date - a.date;
         });
     });
@@ -50,7 +75,7 @@ module.exports = function (eleventyConfig) {
         }
     });
 
-    eleventyConfig.addPassthroughCopy('./assets/css');
+    // eleventyConfig.addPassthroughCopy('./assets/css');
     eleventyConfig.addPassthroughCopy('./assets/images');
     eleventyConfig.addPassthroughCopy('./assets/js');
 
@@ -61,6 +86,10 @@ module.exports = function (eleventyConfig) {
             inludes: "_includes"
         },
         passthroughFileCopy: true,
-        markdownTemplateEngine: "md"
+        markdownTemplateEngine: "md",
+        templateFormats: ["md", "njk", "html", "liquid"],
+        markdownTemplateEngine: "liquid",
+        // htmlTemplateEngine: "njk",
+        dataTemplateEngine: "njk"
     };
 };

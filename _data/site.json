@@ -1,5 +1,10 @@
 {
     "title": "Highlights from books and articles | Yash Agarwal",
-    "email": "yashagarwaljpr+blog@gmail.com",
-    "url": "https://highlights.yashagarwal.in"
+    "description": "Some snippets I thought worth highlighting and saving for later",
+    "author": {
+        "name": "Yash Agarwal",
+        "email": "yashagarwaljpr+blog@gmail.com"
+    },
+    "url": "https://highlights.yashagarwal.in",
+    "feedUrl": "https://highlights.yashagarwal.in/feed.xml"
 }

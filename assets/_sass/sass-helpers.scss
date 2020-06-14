@@ -3,9 +3,16 @@
  *	---------------------------------------------
  */
 
- /* FONTS */
- $font-body: Karla, 'San Francisco', 'Segoe UI', 'Helvetica Neue', sans-serif;
- $font-secondary: 'Sorts Mill Goudy', 'Goudy Old Style', 'Garamond', serif;
+/* FONTS */
+$font-body: Karla,
+'San Francisco',
+'Segoe UI',
+'Helvetica Neue',
+sans-serif;
+$font-secondary: 'Sorts Mill Goudy',
+'Goudy Old Style',
+'Garamond',
+serif;
 
 /* BREAKPOINTS */
 $bp-xs: 25em;
@@ -26,6 +33,7 @@ $color-bg: #000;
 $color-body: #d2d2d2;
 $color-border: #999;
 $color-secondary: #a2a2a2;
+$color-star: #fc0;
 
 /*
  *	MIXINS

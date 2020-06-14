@@ -11,6 +11,8 @@
     <script src="/assets/js/html5shiv.js"></script>
   <![endif]-->
 
+  <link rel=alternate type=application/atom+xml href="{{ site.feedUrl }}" title="Atom feed for {{ site.url }}">
+
   <link rel="icon" href="/assets/images/favicon-16.png" sizes="16x16" type="image/png">
   <link rel="icon" href="/assets/images/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="/assets/images/favicon-48.png" sizes="48x48" type="image/png">
@@ -20,7 +22,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@yash__here" />
   <meta name="twitter:title" content="{% if title %}{{ title | escape }} | {% endif %} highlights.yashagarwal.in" />
-  <meta name="twitter:description" content="Some snippets I thought worth highlighting and saving for later" />
+  <meta name="twitter:description" content="{{ site.description }}" />
   {% if book %}
     <meta name="twitter:image:src" content="{{ site.url }}/assets/images/covers/{{ book }}.jpg" />
     <meta name="twitter:image:alt" content="Cover of {{ title }}" />

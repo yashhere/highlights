@@ -15,12 +15,15 @@ title: ""
 book: dash-separated
 author:
   -
-kindle: true
+type: "kindle"
 date: YYYY-MM-DD
 tags:
   -
 rating: number
 review: true
+other:
+  isbn:
+  pages:
 ---
 ```
 

@@ -3,6 +3,47 @@
  *	---------------------------------------------
  */
 
+.stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+
+  display: inline-block;
+  font-size: 20px;
+  font-family: Times; // make sure ★ appears correctly
+  line-height: 1;
+
+  &::before {
+    content: "★★★★★";
+    background: -webkit-linear-gradient(left, $color-star var(--percent), #fff var(--percent));
+    background: linear-gradient(90deg, $color-star var(--percent), #fff var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.metadata {
+  margin-top: 1em;
+  font-size: 0.8em;
+  margin-left: auto;
+  margin-right: auto;
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  tr {
+    border: 1px solid $color-border;
+    padding: 0.55rem;
+    text-align: left;
+  }
+
+  td {
+    border: 1px solid $color-border;
+    padding: 0.55rem;
+    text-align: left;
+  }
+}
+
 .book {
   margin-bottom: 3em;
 }
