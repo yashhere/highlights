@@ -261,6 +261,16 @@ a.book__image {
   }
 }
 
+@media (min-width: $bp-m) {
+  .book {
+    width: 90%;
+  }
+
+  .book__notes {
+    max-width: 40em;
+  }
+}
+
 @media (min-width: $bp-l) {
   .book {
     margin-bottom: 5em;
