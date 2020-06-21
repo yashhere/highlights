@@ -1,18 +1,25 @@
 ---
 layout: post
-title: "The Rozabal Line"
+title: The Rozabal Line
+short_title: The Rozabal Line
 book: the-rozabal-line
 author:
-  - Ashwin Sanghi
-type: "kindle"
-date: 2018-11-05T12:00:44+05:30
+- Ashwin Sanghi
+- Shawn Haigins
+type: kindle
+date_read: '2018-11-02'
+date_added: '2018-10-27'
 tags:
-  - fiction
-rating: 3.8
+- fiction
+- mythology
+- thriller
+- indian
+rating: '3.8'
 review: true
 other:
-  isbn: 9780615384504
-  pages: 278
+  isbn: '9780615384504'
+  pages: '278'
+  reread_date: ''
 ---
 
 <!-- {{< figure type="margin" src="/images/books/the-rozabal-line.jpg" title="The Rozabal Line" rating="3.8">}} -->

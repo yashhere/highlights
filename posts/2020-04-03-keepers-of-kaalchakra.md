@@ -1,19 +1,25 @@
 ---
 layout: post
-title: "Keepers of the Kalachakra"
+title: Keepers of the Kalachakra
+short_title: Keepers of the Kalachakra
 book: keepers-of-the-kalachakra
 author:
-  - Ashwin Sanghi
-type: "kindle"
-date: 2020-04-21T14:17:26+05:30
+- Ashwin Sanghi
+type: kindle
+date_read: '2020-04-03'
+date_added: '2020-04-06'
 tags:
-  - fiction
-rating: 3
+- fiction
+- mystery
+- thriller
+rating: '3'
 review: true
 other:
-  isbn: 9789386850645
-  pages: 416
+  isbn: '9789386850645'
+  pages: '416'
+  reread_date: ''
 ---
+
 
 <!-- {{< figure type="margin" src="/images/books/keepers-of-the-kalachakra.jpg" rating="3" title="Keepers of The Kaalchakra">}} -->
 

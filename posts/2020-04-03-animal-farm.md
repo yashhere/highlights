@@ -1,20 +1,26 @@
 ---
 layout: post
-title: "Animal Farm"
+title: Animal Farm
+short_title: Animal Farm
 book: animal-farm
 author:
-  - George Orwell
-type: "kindle"
-date: 2020-04-26T06:33:47+05:30
+- George Orwell
+- Russell Baker
+- C.M. Woodhouse
+type: kindle
+date_read: '2020-04-03'
+date_added: '2019-03-07'
 tags:
   - classic
   - allegory
-rating: 5
+rating: '5'
 review: true
 other:
-  isbn: 9780451526342
-  pages: 141
+  isbn: '9780451526342'
+  pages: '141'
+  reread_date: ''
 ---
+
 
 <!-- {{< figure type="margin" src="/images/books/animal-farm.jpg" rating="5" title="Animal Farm">}} -->
 

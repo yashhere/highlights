@@ -1,21 +1,23 @@
 ---
 layout: post
-title: "The Code Book: The Evolution of Secrecy from Ancient Egypt to Quantum Cryptography"
-short_title: "The Code Book"
+title: 'The Code Book: The Science of Secrecy from Ancient Egypt to Quantum Cryptography'
+short_title: 'The Code Book'
 book: the-code-book
 author:
-  - Simon Singh
-type: "kindle"
-date: 2018-12-15T19:04:38+05:30
+- Simon Singh
+type: kindle
+date_read: '2018-11-30'
+date_added: '2018-11-16'
 tags:
-  - CS
-  - tech
-  - crypto
-rating: 5
+  - computer science
+  - cryptography
+  - security
+rating: '5'
 review: true
 other:
-  isbn: 9780385495325
-  pages: 412
+  isbn: '9780385495325'
+  pages: '412'
+  reread_date: ''
 ---
 
 <!-- {{< figure type="margin" src="/images/books/the-code-book.jpg" caption-position="none" rating="5" title="The Code Book">}} -->

@@ -11,8 +11,9 @@ module.exports = function (eleventyConfig) {
         return util.inspect(obj);
     });
 
+    moment.locale('en');
     eleventyConfig.addFilter("dateformat", function (dateIn) {
-        return moment(dateIn).tz('GMT').format('DD-MM-YYYY');
+        return moment(dateIn).format('DD-MM-YYYY');
     });
 
     // compress and combine js files

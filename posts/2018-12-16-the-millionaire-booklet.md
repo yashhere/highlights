@@ -1,15 +1,21 @@
 ---
 layout: post
-title: "The Millionaire Booklet"
+title: The Millionaire Booklet
+short_title: The Millionaire Booklet
 book: the-millionaire-booklet
 author:
-  - Grant Cardone
-type: "audiobook"
-date: 2018-12-17T09:50:27+05:30
+- Grant Cardone
+type: audiobook
+date_read: '2018-12-16'
+date_added: '2018-12-12'
 tags:
-  - finance
-rating: 3.7
-review: true
+- finance
+rating: '4'
+review: false
+other:
+  isbn: ''
+  pages: ''
+  reread_date: ''
 ---
 
 <!-- {{< figure type="margin" src="/images/books/the-millionaire-booklet.jpg" rating="3.7" title="The Millionaire Booklet">}} -->

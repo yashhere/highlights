@@ -4,6 +4,7 @@
 <h1 class="sr-only">Explore all books</h1>
 
 <ul class="covers">
+  <!-- Total books read = {{ collections.posts.size }} -->
   {% for post in collections.posts %}
     <li class="cover">
       {% assign current_book = post.data.book %}

@@ -1,18 +1,23 @@
 ---
 layout: post
-title: "7 Secrets of Vishnu"
+title: 7 Secrets Of Vishnu
+short_title: 7 Secrets Of Vishnu
 book: 7-secrets-of-vishnu
 author:
-  - Devdutt Pattanaik
-type: "kindle"
-date: 2018-11-24T14:00:36+05:30
+- Devdutt Pattanaik
+type: kindle
+date_read: '2018-11-08'
+date_added: '2018-11-03'
 tags:
   - mythology
-rating: 4.5
+  - religion
+  - indian
+rating: '4.5'
 review: true
 other:
-  isbn: 9789380658681
-  pages: 250
+  isbn: '9789380658681'
+  pages: '250'
+  reread_date: ''
 ---
 
 <!-- {{< figure type="margin" src="/images/books/7-secrets-of-vishnu.jpg" rating="4.5" title="7 Secrets of Vishnu">}} -->

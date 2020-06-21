@@ -1,18 +1,21 @@
 ---
 layout: post
-title: "I Will Teach You to Be Rich"
+title: I Will Teach You to Be Rich
+short_title: I Will Teach You to Be Rich
 book: i-will-teach-you-to-be-rich
 author:
-  - Ramit Sethi
-type: "kindle"
-date: 2018-12-16T08:30:12+05:30
+- Ramit Sethi
+type: kindle
+date_read: '2018-12-14'
+date_added: '2018-11-19'
 tags:
-  - finance
-rating: 4
+- finance
+rating: '4'
 review: true
 other:
-  isbn: 9780761147480
-  pages: 266
+  isbn: '9780761147480'
+  pages: '266'
+  reread_date: ''
 ---
 
 <!-- -< figure type="margin" src="/images/books/i-will-teach-you-to-be-rich.jpg"  rating="- title="I Will Teach You to Be Rich">- -->

@@ -1,19 +1,24 @@
 ---
 layout: post
-title: "The Richest Man in Babylon"
+title: The Richest Man In Babylon
+short_title: The Richest Man In Babylon
 book: the-richest-man-in-babylon
 author:
-  - George Samuel Clason
-type: "physical"
-date: 2019-08-15T07:28:01+05:30
+- George S. Clason
+type: physical
+date_read: '2019-08-08'
+date_added: '2018-11-19'
 tags:
-  - finance
-rating: 4
+- finance
+rating: '4'
 review: true
 other:
-  isbn: 9789388144315
-  pages: 152
+  isbn: '9789388144315'
+  pages: '152'
+  reread_date: ''
 ---
+
+
 
 <!-- {{< figure type="margin" src="/images/books/the-richest-man-in-babylon.jpg" rating="4" title="The Richest Man in Babylon">}} -->
 

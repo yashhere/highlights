@@ -1,19 +1,24 @@
 ---
 layout: post
-title: "Introducing Quantum Theory"
+title: Introducing Quantum Theory
+short_title: Introducing Quantum Theory
 book: introducing-quantum-theory
 author:
-  - Joseph P. McEvoy
-  - Oscar Zárate
-type: "kindle"
-date: 2018-11-18T20:31:06+05:30
+- J.P. McEvoy
+- Oscar Zárate
+type: kindle
+date_read: '2018-11-17'
+date_added: '2018-11-10'
 tags:
-  - science
-rating: 4
+  -  scinece
+  -  quantum theory
+  -  graphic
+rating: '4'
 review: true
 other:
-  isbn: 9781840460575
-  pages: 176
+  isbn: '9781840460575'
+  pages: '176'
+  reread_date: ''
 ---
 
 <!-- {{< figure type="margin" src="/images/books/introducing-quantum-theory.jpg"  rating="4" title="Introducing Quantum Theory">}} -->

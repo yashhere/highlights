@@ -1,21 +1,27 @@
 ---
 layout: post
-title: "Siddhartha"
+title: Siddhartha
+short_title: Siddhartha
 book: siddhartha
 author:
-  - Hermann Hesse
-type: "kindle"
-date: 2020-05-05T17:34:21+05:30
+- Hermann Hesse
+- Hilda Rosner
+type: kindle
+date_read: '2020-05-03'
+date_added: '2018-11-23'
 tags:
-  - classic
-  - religion
-  - philosophy
-rating: 5
+- classic
+- religion
+- philosophy
+- fiction
+rating: '5'
 review: true
 other:
-  isbn: 9783000141386
-  pages: 152
+  isbn: '9789502531328'
+  pages: '152'
+  reread_date: ''
 ---
+
 
 <!-- {{< figure type="margin" src="/images/books/siddhartha.jpg" rating="5" title="Siddhartha">}} -->
 
