@@ -1,3 +1,4 @@
+
 <article class="book">
   {% assign current_book_url = post.url %}
   {% assign current_book = book %}
@@ -64,7 +65,7 @@
         I listened to this as an audiobook.
     {% elsif type == "kindle" %}
       <ul class="highlights">
-        {% for highlight in kindle_highlights[title] %}
+        {% for highlight in highlights[title] %}
           <li class="highlight" id="{{ highlight.content | downcase | slice: 0, 15 | url_encode }}">
             <p class="highlight__text">{{ highlight.content }}</p>
             <div class="highlight__meta">

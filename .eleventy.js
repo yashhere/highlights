@@ -1,9 +1,11 @@
 const fs = require('fs-extra');
 const moment = require('moment-timezone');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const util = require('util');
 
 const sass = require('./config/sass-process');
 const clippings = require('./config/clippings-parsing');
+
 
 module.exports = function (eleventyConfig) {
     // a debug utility
@@ -28,7 +30,7 @@ module.exports = function (eleventyConfig) {
     // }
 
     sass('./assets/_sass/style.scss', '_site/assets/css/style.css');
-    clippings.parseClippings('My Clippings.txt', '_data/kindle_highlights.json');
+    clippings.parseClippings('My Clippings.txt', '_data/highlights/');
 
     // Plugins
     eleventyConfig.addPlugin(pluginRss);

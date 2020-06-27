@@ -15,7 +15,7 @@ const prependZero = (num = NaN) => {
     return num < 10 ? `${0}${num}` : `${num}`;
 };
 
-function parseClippings(clippingsFile, parsedHighlights) {
+function parseClippings(clippingsFile, highlightsDir) {
     const quotes = transformQuotes(fs.readFileSync(clippingsFile, 'utf8'));
 
     let clips = {}
@@ -28,7 +28,14 @@ function parseClippings(clippingsFile, parsedHighlights) {
         clips[title].push(element);
     })
 
-    fs.writeFile(parsedHighlights, JSON.stringify(clips), 'utf-8');
+    if (!fs.existsSync(highlightsDir)) {
+        fs.mkdir(highlightsDir);
+    }
+    for (var clip in clips) {
+        if (!fs.existsSync(highlightsDir + clip + ".json")) {
+            fs.writeFile(highlightsDir + clip + ".json", JSON.stringify(clips[clip]), 'utf-8');
+        }
+    }
 }
 
 
